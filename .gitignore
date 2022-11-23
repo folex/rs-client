@@ -1,0 +1,5 @@
+/debug
+/target
+**/*.bk
+**/*.bak
+**/.DS_Store
