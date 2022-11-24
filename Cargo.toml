@@ -4,5 +4,18 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-created-swarm = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "master", package = "created-swarm" }
-multiaddr = { version = "^0.14.0" }
+created-swarm = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "fix_client_api", package = "created-swarm" }
+uuid-utils = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "fix_client_api" }
+particle-execution = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "fix_client_api" }
+particle-protocol = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "fix_client_api" }
+log-utils = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "fix_client_api" }
+fluence-libp2p = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "fix_client_api" }
+
+multiaddr = { version = "=0.14.0" }
+
+async-std = "1.12.0"
+futures = "0.3.25"
+maplit = "1.0.2"
+serde_json = "1.0.89"
+env_logger = "0.9.3"
+log = "0.4.17"
