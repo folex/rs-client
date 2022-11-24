@@ -1,6 +1,6 @@
 // use rust_peer;
 use created_swarm::{make_swarms_with_cfg, SwarmConfig};
-use libp2p::core::Multiaddr;
+use multiaddr::Multiaddr;
 
 const KRAS_4: &str = "/dns4/kras-02.fluence.dev/tcp/19001/wss/p2p/12D3KooWHLxVhUQyAuZe6AHMB29P7wkvTNMn7eDMcsqimJYLKREf";
 

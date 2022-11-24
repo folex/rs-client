@@ -4,7 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# created-swarm = { path = "/Users/bebo/localdev/rust-peer/crates/created-swarm/" 
 created-swarm = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "master", package = "created-swarm" }
-libp2p = "0.49.0"
-# libp2p = { git = "https://github.com/fluencelabs/rust-peer.git", branch = "master", package = "fluence-libp2p" }
+multiaddr = { version = "^0.14.0" }
