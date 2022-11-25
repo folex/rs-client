@@ -103,9 +103,9 @@ fn send_particle_to_kras_and_back(swarm: &mut CreatedSwarm) {
 
     let result = block_on(timeout(Duration::from_secs(30), async move {
         println!("before add_service_f");
-        add_service_f.await.expect("add_first_f");
+        println!("add_service_f done: {:?}", add_service_f.await);
         println!("before exec_f");
-        exec_f.await.expect("exec_f");
+        println!("exec_f done: {:?}", exec_f.await);
         println!("before inlet");
         inlet.await
     }));
